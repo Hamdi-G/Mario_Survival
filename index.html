@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Super Mario</title>
+<link rel="stylesheet" href="css/game.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/1.1.25/howler.min.js"></script>
+<!-- Include here all JS files -->
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/client.js"></script>
+<script src="js/game.js"></script>
+<script src="js/player.js"></script>
+<script src="js/ball.js"></script>
+<script src="js/timeBasedAnim.js"></script>
+<script src="js/fps.js"></script>
+<script src="js/listeners.js"></script>
+<script src="js/collisions.js"></script>
+</head>
+<body>
+<canvas id="myCanvas" width="800" height="600" style="background-image: url('assets/img/background.jpg'); background-size: 100% 100%;"></canvas>
+<div id="conv">
+<div style="float:right;width:300px;height:250px;overflow:scroll-y;padding:10px;">
+	<div id="conversation"></div>
+	<input id="data" style="width:200px;" />
+	<input type="button" id="datasend" value="send" />
+</div>
+<div style="float:right;width:100px;border-right:1px solid black;height:300px;padding:10px;overflow:scroll-y;">
+	<b>USERS</b>
+	<div id="users"></div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+
+#myCanvas {
+  border: 1px solid black;
+    float:left;
+    width:60%;
+}
+ #conv {
+    margin-left:60%
+}
